@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Sensitivity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-container">
+        <h1>Free Fire Sensitivity</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="checkLogin()">Login</button>
+        <p id="error-msg"></p>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <h1>Select Your Phone</h1>
+        <div id="phone-list">
+            <button onclick="showSensitivity('ZTE A35')">ZTE A35</button>
+            <button onclick="showSensitivity('Samsung Galaxy A12')">Samsung Galaxy A12</button>
+            <button onclick="showSensitivity('iPhone 13')">iPhone 13</button>
+        </div>
+        <div id="sensitivity-output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+  
